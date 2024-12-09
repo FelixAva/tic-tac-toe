@@ -6,11 +6,9 @@ class Cell:
     self.state = new_state
 
   def translate_value(self):
-    if self.state == 0:
+    if self.state == None:
+      return ' '
+    elif self.state == 0:
       return 'O'
 
     return 'X'
-
-cell = Cell()
-cell.set_state(0)
-cell.translate_value()
